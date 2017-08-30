@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:GurCodesGestureRecognizers" x:Class="GurCodesGestureRecognizers.GurCodesGestureRecognizersPage">
+    <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+        <Button Text="Tap me!" Clicked="Handle_Clicked" />
+    	<Label Text="Welcome to Xamarin Forms!" VerticalOptions="Center" HorizontalOptions="Center">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="Handle_Tapped" />
+            </Label.GestureRecognizers>
+        </Label>
+        <Grid VerticalOptions="Center" HorizontalOptions="Center">
+            <Grid.GestureRecognizers>
+                <PinchGestureRecognizer PinchUpdated="Handle_PinchUpdated" />
+            </Grid.GestureRecognizers>
+            
+            <Label Text="Welcome to Xamarin Forms!" VerticalOptions="Center" HorizontalOptions="Center">
+        </Label>
+        </Grid>
+    </StackLayout>
+</ContentPage>
